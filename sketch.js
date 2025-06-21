@@ -23,6 +23,9 @@ let departureDate;
 let returnDate;
 let peopleCount;
 
+let t = 0;
+let wait = false;
+
 function preload() {
   logoImg = loadImage('logo_w.png');
 }
@@ -117,6 +120,12 @@ function draw() {
   if (showVoucherBox) {
     drawBottomSlideMessage(); 
   }
+   if(wait){
+        t++;
+        if(t==20){
+          window.location.href = 'https://ksalanski.github.io/Ryan3/'
+        }
+   }
 }
 
 function drawNavbar() {
@@ -155,6 +164,7 @@ function drawFlightList() {
     let h = (i === 0) ? 80 : 50;
 
     let isHover = mouseX > x && mouseX < x + w && mouseY > y && mouseY < y + h;
+  
 
     if (f.soldOut && isHover) {
       tooltip = 'Lot wyprzedany';
@@ -189,6 +199,8 @@ function drawFlightList() {
       textStyle(BOLD);
       textAlign(RIGHT, CENTER);
       text('SUPER OFERTA!', x + w - 20, y + h / 2);
+      
+     
     }
   }
 }
@@ -246,7 +258,7 @@ function mousePressed() {
 
   if (mouseX > btnX && mouseX < btnX + btnW && mouseY > btnY && mouseY < btnY + btnH) {
     alert('Przechodzisz dalej...');
-    // GITHUB KAMIL
+    wait = true;
      database.ref("danelotow").set({
 cena: priceChosen,
 datawylotu: departureDate,
@@ -255,6 +267,7 @@ liczbaosób: peopleCount,
 miejsce2: destChosen,
 miejsce1: originChosen
 });
+    
   }
 }
 
