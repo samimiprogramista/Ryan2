@@ -5,7 +5,7 @@
 let logoImg;
 let flights = [];
 let tooltip = '';
-let offerCountdown = 10;
+let offerCountdown = 3;
 let discountInput;
 let useButton;
 let invalidCodeMessageShown = false;
@@ -123,7 +123,7 @@ function draw() {
    if(wait){
         t++;
         if(t==20){
-          window.location.href = 'https://ksalanski.github.io/Ryan3/'
+          window.location.href = 'https://cooqieez.github.io/rajanskrrt/'
         }
    }
 }
@@ -353,7 +353,7 @@ function drawBottomSlideMessage() {
     textSize(20);
     textAlign(CENTER);
     textStyle(NORMAL);
-    text('Czas na konsekwencje!', msgX, msgY + 20);
+    text('Czas na konsekwencje!', windowWidth/2, windowHeight/2 - 20);
   }
   }
 }
