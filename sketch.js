@@ -339,7 +339,7 @@ function drawBottomSlideMessage() {
     
      if (checkbox.checked()) {
     let msgX = windowWidth / 2;
-    let msgY = windowHeight/2 - 40;
+    let msgY = windowHeight/5 + 220;
 
     // Strzałka w górę
     fill(7, 53, 144);
@@ -353,7 +353,7 @@ function drawBottomSlideMessage() {
     textSize(20);
     textAlign(CENTER);
     textStyle(NORMAL);
-    text('Czas na konsekwencje!', windowWidth/2, windowHeight/2 - 20);
+    text('Czas na konsekwencje!', windowWidth/2, windowHeight/5 + 250);
   }
   }
 }
