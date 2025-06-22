@@ -5,7 +5,7 @@
 let logoImg;
 let flights = [];
 let tooltip = '';
-let offerCountdown = 3;
+let offerCountdown = 10;
 let discountInput;
 let useButton;
 let invalidCodeMessageShown = false;
@@ -336,24 +336,5 @@ function drawBottomSlideMessage() {
     textSize(16);
     textAlign(CENTER);
     text('Opcja dostępna tylko dla Użytkowników Premium', windowWidth / 2, boxY + boxHeight / 2 + 115);
-    
-     if (checkbox.checked()) {
-    let msgX = windowWidth / 2;
-    let msgY = windowHeight/5 + 220;
-
-    // Strzałka w górę
-    fill(7, 53, 144);
-    noStroke();
-    triangle(
-      msgX - 7, msgY + 5, // lewy punkt podstawy
-      msgX + 7, msgY + 5, // prawy punkt podstawy
-      msgX, msgY - 7      // czubek strzałki (w górę)
-    );
-
-    textSize(20);
-    textAlign(CENTER);
-    textStyle(NORMAL);
-    text('Czas na konsekwencje!', windowWidth/2, windowHeight/5 + 250);
-  }
   }
 }
