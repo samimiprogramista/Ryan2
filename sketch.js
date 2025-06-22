@@ -302,7 +302,7 @@ function drawBottomSlideMessage() {
   fill(255);
   textSize(20);
   textStyle(NORMAL);
-  text('Czas minął, ale nie przejmuj się.', windowWidth / 2, boxY + boxHeight / 2 - 100);
+  text('Czas minął, ale głowa do góry.', windowWidth / 2, boxY + boxHeight / 2 - 100);
   fill(255);
   textSize(30);
   textStyle(BOLD);
