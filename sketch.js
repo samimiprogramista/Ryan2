@@ -335,6 +335,6 @@ function drawBottomSlideMessage() {
     fill(255, 0, 0);
     textSize(16);
     textAlign(CENTER);
-    text('Opcja dostępna tylko dla Użytkowników Premium', windowWidth / 2, boxY + boxHeight / 2 + 115);
+    text('Opcja dostępna tylko dla Użytkowników Premium, Użytkowników Plus, Użytkowników VIP oraz Użytkowników Lepszych od Ciebie', windowWidth / 2, boxY + boxHeight / 2 + 115);
   }
 }
